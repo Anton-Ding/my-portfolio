@@ -1,10 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-    <title>我的作品集</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anton Ding | Geek Portfolio</title>
+    <style>
+        body {
+            background-color: #0d1117; /* 极客深黑 */
+            color: #58a6ff; /* 极客蓝 */
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+        .container {
+            border: 1px solid #30363d;
+            padding: 2rem;
+            border-radius: 8px;
+            background: #161b22;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+        }
+        h1 { font-size: 1.5rem; color: #79c0ff; }
+        .cursor { animation: blink 1s infinite; }
+        @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+        .links a {
+            color: #8b949e;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 0.9rem;
+        }
+        .links a:hover { color: #58a6ff; }
+        .status { color: #3fb950; font-size: 0.8rem; margin-top: 20px; }
+    </style>
 </head>
 <body>
-    <h1>你好！我是 Anton，这是我的 Web Coding 案例集。</h1>
-    <p>网站正在建设中，敬请期待！</p>
+    <div class="container">
+        <h1>> Hello, I'm Anton Ding<span class="cursor">_</span></h1>
+        <p>Future Geek | Web Developer | Tech Explorer</p>
+        <div class="links">
+            <a href="https://github.com/Anton-Ding">GitHub</a>
+            <a href="mailto:xiongtao.ding.design@gmail.com">Email</a>
+        </div>
+        <div class="status">
+            SYSTEM STATUS: <span id="domain-status">Awaiting EU.org Activation...</span>
+        </div>
+    </div>
 </body>
 </html>
